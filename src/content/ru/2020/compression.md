@@ -9,10 +9,10 @@ reviewers: [paulcalvano]
 analysts: [AbbyTsai]
 editors: [exterkamp]
 translators: [dtikhonov]
-jyrkialakuijala_bio: Юрки Alakuijala -- активный член open source software сообщества и исследователь сжатия данных. Юрки работает в <span lang="en">Google</a> как технический руководидель.  Его недавно опубликовфанные работы включают <span lang="en">Zopfli</span>, <span lang="en">Butteraugli</span>, <span lang="en">Guetzli</span>, <span lang="en">Gipfeli</span>, <span lang="en">WebP lossless</span>, <span lang="en">Brotli</span>, <span lang="en">JPEG XL</span> форматы и алгоритмы сжатия, а также два алгоритма хаширования: CityHash and HighwayHash. До <span lang="en">Google</span>, он разратывал программное обеспечение для нейрохирургии и радиотерапии.
-sboukortt_bio: Sami joined Google after completing his studies in engineering mathematics. After a few years of remote interest in compression, he eventually made it his full-time subject of work in 2018.
-mo271_bio: Moritz Firsching is software engineer at Google Switzerland, where he works on progressive image formats and font compression. Before that Moritz did research as a mathematician studying polytopes.
-veluca93_bio: Luca Versari is a software engineer at Google, working on <a href="https://gitlab.com/wg1/jpeg-xl">JPEG XL</a>. He's finishing a PhD on graph compression and has a background in mathematics.
+jyrkialakuijala_bio: Юрки Алакуяла -- активный член open source software сообщества и исследователь сжатия данных. Юрки работает в <span lang="en">Google</a> как технический руководидель.  Его недавно опубликовфанные работы включают <span lang="en">Zopfli</span>, <span lang="en">Butteraugli</span>, <span lang="en">Guetzli</span>, <span lang="en">Gipfeli</span>, <span lang="en">WebP lossless</span>, <span lang="en">Brotli</span>, <span lang="en">JPEG XL</span> форматы и алгоритмы сжатия, а также два алгоритма хаширования: CityHash and HighwayHash. До <span lang="en">Google</span>, он разратывал программное обеспечение для нейрохирургии и радиотерапии.
+sboukortt_bio: Сами присоединился к Google по окончании учебы по математике инженерии. После нескольких лет интереса(?) в сжатии, он в конце концов начал работать над этим в полную силу в 2018.
+mo271_bio: Мориц Фиршинг -- инженер-программист в <span lang="en">Google Switzerland</span>, где он работает над прогрессивными форматами изображений и сжатием шрифтов. До того, Мориц занимался исследовательсокой деятельностью, изучая политопы.
+veluca93_bio: Лука Версари -- инженер-программист в <span lang="en">Google</span>, где он работает над <a href="https://gitlab.com/wg1/jpeg-xl">JPEG XL</a>. Он заканчивает докторскую по сжатию графов и имеет математическое образование.
 discuss: 2055
 results: https://docs.google.com/spreadsheets/d/1NKbP4AqMkgCNCsVD3yLhO2d0aqIsgZ7AGLEtUDHl9yY/
 queries: 19_Compression
@@ -26,13 +26,13 @@ featured_stat_label_3: Websites that pass the Lighthouse audit with maximum scor
 unedited: true
 ---
 
-## Introduction
+## Вступление
 
-Using HTTP compression makes a website load faster and therefore guarantees a better user experience. Running no compression on HTTP makes for a worse user experience, may affect the growth rate of the related web service, and affects search rankings.  Effective use of compression can reduce [page weight](./page-weight), improves [web performance](./performance), and therefore is an important part of [search engine optimization](./seo).
+Использование сжатия данных в <span lang="en">HTTP</span> позволяет вебсайту загрузиться быстрее и, таким образом, гарантирует улучшенный опыт пользователя. <span lang="en">HTTP</span> без сжатмия ухудшает опыт пользователя, может замедлить темп роста веб-сервиса и влияет на поисковый рейтинг.  Эффективное использовение сжатия данных может уменьшить [page weight](./page-weight), улучшить [web performance](./performance), и значит является важной частью [поисковой оптимизации](./seo).
 
-While lossy compression is often acceptable for images and other [media](./media) types, for text we want to use lossless compression, i.e. recover the exact text after decompression.
+В то время, как сжатие с потерями зачастую приемлемо для изображений и других [медийных](./media) типов, для текста нужно использовать компрессию без потерь, дабы воспроизвести исходный текст в точности после расширения.
 
-## What type of content should we compress?
+## Какие типы данных нужно сжимать?
 
 For most text-based assets, such as [HTML](./markup), [CSS](./css), [JavaScript](./javascript), JSON, or SVG, as well as certain non-text formats such as woff, ttf, ico, using compression is recommended.
 
@@ -61,7 +61,7 @@ For image-based assets text-based compression is less useful and not widely empl
   )
 }}
 
-## How to use HTTP compression?
+## Как использовать <span lang="en">HTTP</span>-сжатие?
 
 To reduce the size of the files that we plan to serve one could first use some minimizers, e.g. [HTMLMinifier](https://github.com/kangax/html-minifier), [CSSNano](https://github.com/ben-eb/cssnano), or [UglifyJS](https://github.com/mishoo/UglifyJS2). However bigger gains are expected from using compression.
 
@@ -103,7 +103,7 @@ When you want to use Gzip, consider using [Zopfli](https://en.wikipedia.org/wiki
 
 Many [popular servers](https://en.wikipedia.org/wiki/HTTP_compression#Servers_that_support_HTTP_compression) support dynamically and/or pre-compressed HTTP and many of them support [Brotli](https://en.wikipedia.org/wiki/Brotli).
 
-## Current state of HTTP compression
+## Нынешнее состояние <span lang="en">HTTP</span>-сжатия
 
 Approximately 60% of HTTP responses are delivered with no text-based compression. This may seem like a surprising statistic, but keep in mind that it is based on all HTTP requests in the dataset. Some content, such as images, will not benefit from these compression algorithms and is therefore not often used, as shown in figure 19.2.
 
@@ -174,7 +174,7 @@ In the graph below, the top 11 content types are displayed with box sizes repres
 
 Figure 19.1 above breaks down the percentage of compression used per content type, in figure 19.6 this percentage is indicated as color. The two figures tell similar stories, non-text based assets are rarely compressed, while text-based assets are often compressed. The rates of compression are also similar for both mobile and desktop.
 
-## First-party vs third-party compression
+## Первостороннее <span lang="la">vs</span> третьестороннее сжатие
 
 In the [Third Parties](./third-parties) chapter, we learn about third parties and their impact on performance. This is also true for third-party request compression.
 
@@ -240,7 +240,7 @@ When we compare compression techniques between first and third parties, we can s
 Compared with [last year's results](../2019/compression#first-party-vs-third-party-compression), we can see that there was a significant increase in the use of compression, notably Brotli for first parties, almost to the point that the use of compression is around 40% for both first and third party, and for desktop and mobile. However within the requests that do use compression, for first parties, the ratio of Brotli compression is only 18%, while the ratio for third parties is 27%.
 
 
-## How to analyze compression on your sites
+## Как анализировать сжатие на вашем сайте
 
 You can use [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) or [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) to quickly figure out what content a website already compresses. To do this, go to the Network tab, right click and activate "Content Encoding" under Response Headers. Hovering over the size of individual files you will see "transferred over network" and "resource size". Aggregated for the entire site one can see size/transferred size for Firefox and  "transferred" and "resources" for Chrome on the bottom left hand side of the Network tab.
 
@@ -270,7 +270,7 @@ Because the [HTTP Archive runs Lighthouse audits](./methodology#lighthouse) for 
   )
 }}
 
-## Conclusion
+## Заключение
 
 Compared with [last year's Almanac](../2019/compression), there is a clear trend towards using more text compression. The number of requests that don't use any text compression went down a little more than 2%, while at the same time the use of Brotli has increased by almost 2%. The Lighthouse scores have improved significantly.
 
