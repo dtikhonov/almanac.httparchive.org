@@ -2,14 +2,15 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 part_number: IV
 chapter_number: 19
-title: Compression
-description: Compression chapter of the 2020 Web Almanac covering HTTP compression, algorithms, content types, 1st party and 3rd party compression and opportunities.
+title: Сжатие
+description: Глава "Сжатие" издания Web Almanac за 2020 год освещает HTTP сжатие, алгоритмы, типы данных, первостороннее и третьестороннее сжатие и перспективы.
 authors: [mo271, veluca93, sboukortt, jyrkialakuijala]
 reviewers: [paulcalvano]
 analysts: [AbbyTsai]
 editors: [exterkamp]
 translators: [dtikhonov]
-jyrkialakuijala_bio: Юрки Алакуяла -- активный член open source software сообщества и исследователь сжатия данных. Юрки работает в <span lang="en">Google</a> как технический руководидель.  Его недавно опубликовфанные работы включают <span lang="en">Zopfli</span>, <span lang="en">Butteraugli</span>, <span lang="en">Guetzli</span>, <span lang="en">Gipfeli</span>, <span lang="en">WebP lossless</span>, <span lang="en">Brotli</span>, <span lang="en">JPEG XL</span> форматы и алгоритмы сжатия, а также два алгоритма хаширования: CityHash and HighwayHash. До <span lang="en">Google</span>, он разратывал программное обеспечение для нейрохирургии и радиотерапии.
+# TODO: replace second mdash with colon once bug 1865 is fixed
+jyrkialakuijala_bio: Юрки Алакуяла -- активный член open source software сообщества и исследователь сжатия данных. Юрки работает в <span lang="en">Google</a> как технический руководидель.  Его недавно опубликовфанные работы включают <span lang="en">Zopfli</span>, <span lang="en">Butteraugli</span>, <span lang="en">Guetzli</span>, <span lang="en">Gipfeli</span>, <span lang="en">WebP lossless</span>, <span lang="en">Brotli</span>, <span lang="en">JPEG XL</span> форматы и алгоритмы сжатия, а также два алгоритма хаширования -- CityHash and HighwayHash. До <span lang="en">Google</span>, он разрабатывал программное обеспечение для нейрохирургии и радиотерапии.
 sboukortt_bio: Сами присоединился к Google по окончании учебы по математике инженерии. После нескольких лет интереса(?) в сжатии, он в конце концов начал работать над этим в полную силу в 2018.
 mo271_bio: Мориц Фиршинг -- инженер-программист в <span lang="en">Google Switzerland</span>, где он работает над прогрессивными форматами изображений и сжатием шрифтов. До того, Мориц занимался исследовательсокой деятельностью, изучая политопы.
 veluca93_bio: Лука Версари -- инженер-программист в <span lang="en">Google</span>, где он работает над <a href="https://gitlab.com/wg1/jpeg-xl">JPEG XL</a>. Он заканчивает докторскую по сжатию графов и имеет математическое образование.
