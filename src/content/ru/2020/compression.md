@@ -34,7 +34,7 @@ unedited: true
 
 ## Какие типы данных нужно сжимать?
 
-For most text-based assets, such as [HTML](./markup), [CSS](./css), [JavaScript](./javascript), JSON, or SVG, as well as certain non-text formats such as woff, ttf, ico, using compression is recommended.
+Для большинства текстовых ресурсов, таких как [HTML](./markup), [CSS](./css), [JavaScript](./javascript), JSON или SVG, а также для определенных нетекстовых форматов типа woff, ttf и icj, использовние сжатия рекомендуется.
 
 {{ figure_markup(
   image="compession-methods-by-content-type.png",
