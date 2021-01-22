@@ -38,7 +38,7 @@ unedited: true
 
 {{ figure_markup(
   image="compession-methods-by-content-type.png",
-  caption="Compression Methods for Different Content Types",
+  caption="Методы сжатия ресурсов разных типов",
   description="A stacked bar chart showing the usage rate of different compression algorithms broken down by the content type. The stacked bars divide up the use of Brotli, Gzip, and no compression. `text/html` is the only content type that is compressed less than 50% of the time. `application/json` and `image/svg+xml` are each approximately 64% compressed. `text/css` and `application/javascript` are each approximately 85% compressed. `application/x-javascript` and `text/javascript` are greater than 90% compressed.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vTxUj8-0vKTqPAblIXqekSbiRh1D1lEuA3gVD9w23qwGPtJRE8FbgrURfPAgfFZX2l0t84Wy5ZAGqzR/pubchart?oid=1658254159&format=interactive",
   sheets_gid="107138856",
@@ -46,8 +46,8 @@ unedited: true
   )
 }}
 
-The figure shows the percent of requests of a certain content type using either Brotli, Gzip or no text compression.
-It is surprising that while all those content types would profit from compression, the range of percentages varies widely over the different content types:  only 44% use compression for `text/html` against 93% for `application/x-javascript`.
+Этот график показывает, какой процент запросов определенных типов ресурсов используют сжатие <span lang="en">Brotli</span>, <span lang="en">Gzip</span> или же не используют сжатие.
+Удивительно то, что хотя все эти типы ресурсов выигрывают от сжатия, процетный диапазон широко варьиерутся между разными типами: только 44% из `text/html` ресурсов сжимаются, тогда как из ресурсов типа `application/x-javascript` сжимаются 93%.
 
 For image-based assets text-based compression is less useful and not widely employed. The data shows that the percent of image requests that employ either Brotli, or Gzip is very low, less than 4%. For more info on non text-based assets, check out the [Media](./media) chapter.
 
