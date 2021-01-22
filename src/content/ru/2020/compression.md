@@ -61,7 +61,7 @@ For image-based assets text-based compression is less useful and not widely empl
   )
 }}
 
-## Как использовать <span lang="en">HTTP</span>-сжатие?
+## Как использовать <span lang="en">HTTP</span>-сжатие? {как-использовать-HTTP-сжатие}
 
 To reduce the size of the files that we plan to serve one could first use some minimizers, e.g. [HTMLMinifier](https://github.com/kangax/html-minifier), [CSSNano](https://github.com/ben-eb/cssnano), or [UglifyJS](https://github.com/mishoo/UglifyJS2). However bigger gains are expected from using compression.
 
@@ -103,7 +103,7 @@ When you want to use Gzip, consider using [Zopfli](https://en.wikipedia.org/wiki
 
 Many [popular servers](https://en.wikipedia.org/wiki/HTTP_compression#Servers_that_support_HTTP_compression) support dynamically and/or pre-compressed HTTP and many of them support [Brotli](https://en.wikipedia.org/wiki/Brotli).
 
-## Нынешнее состояние <span lang="en">HTTP</span>-сжатия
+## Нынешнее состояние <span lang="en">HTTP</span>-сжатия {нынешнее-состояние-HTTP-сжатия}
 
 Approximately 60% of HTTP responses are delivered with no text-based compression. This may seem like a surprising statistic, but keep in mind that it is based on all HTTP requests in the dataset. Some content, such as images, will not benefit from these compression algorithms and is therefore not often used, as shown in figure 19.2.
 
@@ -174,7 +174,7 @@ In the graph below, the top 11 content types are displayed with box sizes repres
 
 Figure 19.1 above breaks down the percentage of compression used per content type, in figure 19.6 this percentage is indicated as color. The two figures tell similar stories, non-text based assets are rarely compressed, while text-based assets are often compressed. The rates of compression are also similar for both mobile and desktop.
 
-## Первостороннее <span lang="la">vs</span> третьестороннее сжатие
+## Первостороннее <span lang="la">vs</span> третьестороннее сжатие {первостороннее-vs-третьестороннее-сжатие}
 
 In the [Third Parties](./third-parties) chapter, we learn about third parties and their impact on performance. This is also true for third-party request compression.
 
