@@ -59,7 +59,7 @@ featured_stat_label_3: Websites that pass the Lighthouse audit with maximum scor
 
 ## Как использовать <span lang="en">HTTP</span>-сжатие? {как-использовать-HTTP-сжатие}
 
-To reduce the size of the files that we plan to serve one could first use some minimizers, e.g. [HTMLMinifier](https://github.com/kangax/html-minifier), [CSSNano](https://github.com/ben-eb/cssnano), or [UglifyJS](https://github.com/mishoo/UglifyJS2). However bigger gains are expected from using compression.
+Чтобы уменьшить размеры файлов, возвращаемых веб сервером, можно сперва использовать минимизатор, например [HTMLMinifier](https://github.com/kangax/html-minifier), [CSSNano](https://github.com/ben-eb/cssnano) или [UglifyJS](https://github.com/mishoo/UglifyJS2).  Но больший выигрыш, скорее всего, будет получен путем сжатия данных.
 
 There are two ways of doing the compression on the server side:
 
