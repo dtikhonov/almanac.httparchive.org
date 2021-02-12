@@ -1,7 +1,5 @@
 ---
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
-part_number: IV
-chapter_number: 19
 title: Сжатие
 description: Глава "Сжатие" издания Web Almanac за 2020 год освещает HTTP сжатие, алгоритмы, типы данных, первостороннее и третьестороннее сжатие и перспективы.
 authors: [mo271, veluca93, sboukortt, jyrkialakuijala]
@@ -15,15 +13,13 @@ mo271_bio: Мориц Фиршинг -- инженер-программист в
 veluca93_bio: Лука Версари -- инженер-программист в <span lang="en">Google</span>, где он работает над <a href="https://gitlab.com/wg1/jpeg-xl">JPEG XL</a>. Он заканчивает докторскую по сжатию графов и имеет математическое образование.
 discuss: 2055
 results: https://docs.google.com/spreadsheets/d/1NKbP4AqMkgCNCsVD3yLhO2d0aqIsgZ7AGLEtUDHl9yY/
-queries: 19_Compression
 featured_quote: Using HTTP compression makes a website load faster and therefore guarantees a better user experience.
 featured_stat_1: 23%
-featured_stat_label_1: Compressed requests which use Brotli
+featured_stat_label_1: Compressed responses which use Brotli
 featured_stat_2: 77%
-featured_stat_label_2: Compressed requests which use Gzip
+featured_stat_label_2: Compressed responses which use Gzip
 featured_stat_3: 74%
 featured_stat_label_3: Websites that pass the Lighthouse audit with maximum score on text compression
-unedited: true
 ---
 
 ## Вступление
@@ -46,10 +42,10 @@ unedited: true
   )
 }}
 
-Этот график показывает, какой процент запросов определенных типов ресурсов используют сжатие <span lang="en">Brotli</span>, <span lang="en">Gzip</span> или же не используют сжатие.
+Этот график показывает, какой процент ответов определенных типов ресурсов используют сжатие <span lang="en">Brotli</span>, <span lang="en">Gzip</span> или же не используют сжатие.
 Удивительно то, что хотя все эти типы ресурсов выигрывают от сжатия, процетный диапазон широко варьиерутся между разными типами: только 44% из `text/html` ресурсов сжимаются, тогда как из ресурсов типа `application/x-javascript` сжимаются 93%.
 
-Сжатие изображений не так выгодно и широко не применяется. Данные показывают, что процент запросов изображений, которые используют сжатие, очень мал: меньше 4%. Чтобы узнать больше о не-текстовых ресурсах, смотрете главу [Media](./media).
+Сжатие изображений не так выгодно и широко не применяется. Данные показывают, что процент изображений в ответах, которые используют сжатие, очень мал: меньше 4%. Чтобы узнать больше о не-текстовых ресурсах, смотрете главу [Media](./media).
 
 {{ figure_markup(
   image="http-compression-methods-for-image-types.png",
