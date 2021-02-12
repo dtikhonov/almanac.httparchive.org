@@ -61,12 +61,12 @@ featured_stat_label_3: Websites that pass the Lighthouse audit with maximum scor
 
 Чтобы уменьшить размеры файлов, возвращаемых веб сервером, можно сперва использовать минимизатор, например [HTMLMinifier](https://github.com/kangax/html-minifier), [CSSNano](https://github.com/ben-eb/cssnano) или [UglifyJS](https://github.com/mishoo/UglifyJS2).  Но больший выигрыш, скорее всего, будет получен путем сжатия данных.
 
-There are two ways of doing the compression on the server side:
+Существуют два способа сжатия на сервере:
 
-  - Precompressed (compress and save assets ahead of time)
-  - Dynamically Compressed (compress assets on-the-fly after a request is made)
+  - Предварительное сжатие (сжать и сохранить ресурсы загодя)
+  - Динамическое сжатие (сжать ресурсы в момент запроса)
 
-Since precompression is done beforehand, we can spend more time compressing the assets. For dynamically compressed resources, we need to choose the compression levels such that compression takes less time than the time difference between sending an uncompressed versus a compressed file. This difference is borne out when looking at compression level recommendations for both methods.
+Предварительное сжатие позволяет потратить больше компьютерного времени. Для ресурсов, сжимаемых динамически, необходимо выбрать такой уровень сжатия, чтобы время, потраченное на сжатие, в сумме со временем передачи сжатого несурса, не превысило время передачи несжатого ресурса. This difference is borne out when looking at compression level recommendations for both methods.
 
 <figure>
   <table>
@@ -79,18 +79,18 @@ Since precompression is done beforehand, we can spend more time compressing the 
     </thead>
     <tbody>
       <tr>
-        <td>Precompressed</td>
+        <td>Предварительное сжатие</td>
         <td>11</td>
         <td>9 or Zopfli</td>
       </tr>
       <tr>
-        <td>Dynamically compressed</td>
+        <td>Динамическое сжатие</td>
         <td>5</td>
         <td>6</td>
       </tr>
     </tbody>
   </table>
-  <figcaption>{{ figure_link(caption="Recommended compression levels to use.") }}</figcaption>
+  <figcaption>{{ figure_link(caption="Рекомендованные уровни сжатия.") }}</figcaption>
 </figure>
 
 Currently, practically all text compression is done by one of two HTTP content encodings: [Gzip](https://tools.ietf.org/html/rfc1952) and [Brotli](https://github.com/google/brotli). Both are widely supported by browsers: [can I use Brotli](https://caniuse.com/?search=brotli)/[can I use Gzip](https://caniuse.com/?search=gzip)
