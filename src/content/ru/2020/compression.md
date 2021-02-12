@@ -49,7 +49,7 @@ unedited: true
 Этот график показывает, какой процент запросов определенных типов ресурсов используют сжатие <span lang="en">Brotli</span>, <span lang="en">Gzip</span> или же не используют сжатие.
 Удивительно то, что хотя все эти типы ресурсов выигрывают от сжатия, процетный диапазон широко варьиерутся между разными типами: только 44% из `text/html` ресурсов сжимаются, тогда как из ресурсов типа `application/x-javascript` сжимаются 93%.
 
-For image-based assets text-based compression is less useful and not widely employed. The data shows that the percent of image requests that employ either Brotli, or Gzip is very low, less than 4%. For more info on non text-based assets, check out the [Media](./media) chapter.
+Сжатие изображений не так выгодно и широко не применяется. Данные показывают, что процент запросов изображений, которые используют сжатие, очень мал: меньше 4%. Чтобы узнать больше о не-текстовых ресурсах, смотрете главу [Media](./media).
 
 {{ figure_markup(
   image="http-compression-methods-for-image-types.png",
